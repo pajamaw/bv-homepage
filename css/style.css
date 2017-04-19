@@ -196,3 +196,36 @@ section {
   color: white;
   padding: 4em 0;
 }
+#about {
+  background-color: #5c26b4;
+  color: white;
+  padding: 4em 0;
+}
+@media (min-width: 768px) {
+  #about h2#about-heading-text {
+    display: none;
+  }
+  #about h2#about-heading-img {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  #about {
+    width: 100%
+  }
+  #about h2#about-heading-text {
+    display: block;
+  }
+  #about h2#about-heading-img {
+    display: none;
+  }
+  #about img {
+    width: 50%;
+    height:auto;
+  }
+  #about h4 {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+  }
+}
