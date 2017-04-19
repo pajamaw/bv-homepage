@@ -307,3 +307,77 @@ ul.social-buttons li a {
     width: 45%;
   }
 }
+#clients {
+  background-color: #5c26b4;
+  padding: 1em 0em;
+}
+#contact {
+  padding-top: 5em;
+  background-color: #222222;
+}
+#contact .section-heading {
+  color: white;
+  margin-bottom: 0em;
+}
+#contact .section-subheading {
+  color: #585858;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 3em;
+}
+#contact .form-group {
+  margin-bottom: 0.5em;
+  color: white;
+}
+#contact .form-group input,
+#contact .form-group textarea {
+  padding: 1em;
+  border-color: #222222;
+}
+#contact .form-group input.form-control {
+  background-color: #333333;
+}
+#contact .form-group textarea.form-control {
+  height: 15em;
+  background-color: #333333;
+}
+#contact .form-control:focus {
+  border-color: #fed136;
+}
+#contact ::-webkit-input-placeholder {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  color: #7e7e7e;
+}
+#contact :-moz-placeholder {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  color: #7e7e7e;
+}
+#contact ::-moz-placeholder {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  color: #7e7e7e;
+}
+#contact :-ms-input-placeholder {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  color: #7e7e7e;
+}
+#contact [id^="contact-"]:first-child h5 {
+  padding-top: 1.0em;
+}
+#contact [id^="contact-"] h5 {
+  color: white;
+  display: block;
+  float: left;
+  padding-bottom: 0.3em;
+}
+#contact a {
+  color: #7a7a7a;
+}
+.section-description {
+  display: block;
+  clear: left;
+  color: #7a7a7a;
+}
