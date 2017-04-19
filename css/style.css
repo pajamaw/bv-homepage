@@ -229,3 +229,25 @@ section {
     width: 90%;
   }
 }
+#services {
+  background-color: #222222;
+  color: white;
+  text-align: center;
+  padding: 3em;
+}
+#services .section-heading{
+  margin-bottom: 0.2em;
+}
+#services .section-subheading {
+  color: #7b7b7b;
+  width: 45%;
+  margin: auto;
+  padding-bottom: 4em;
+}
+.service-description {
+  color: #7b7b7b;
+  width: 45%;
+  margin: auto;
+
+  padding-bottom: 3.0em;
+}
