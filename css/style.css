@@ -2,7 +2,7 @@ body {
   overflow-x: hidden;
   font-family: 'Open Sans Condensed', sans-serif;
 }
-.text-muted {
+.text-white {
   color: white;
 }
 .purple {
@@ -23,14 +23,6 @@ h6 {
 }
 .img-centered {
   margin: 0 auto;
-}
-.section-heading {
-  line-height: 1.5em;
-}
-.section-subheading {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 300;
-  line-height: 1.4em;
 }
 .btn:focus,
 .btn:active,
@@ -71,15 +63,13 @@ h6 {
   color: white;
   background-color: #7b7b7b;
 }
-.navbar-custom .navbar-brand {
-  color: white;
-  font-family: Arial, sans-serif;
-}
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
-.navbar-custom .navbar-brand.active {
+.navbar-custom .navbar-brand.active,
+.navbar-custom .navbar-brand {
   color: white;
+  font-family: Arial, sans-serif;
 }
 .navbar-custom .navbar-collapse {
   border-color: #5c26b4;
@@ -105,13 +95,10 @@ h6 {
 .navbar-custom .nav li a:focus {
   background: #222222;
   color: white;
-  outline: white;
 }
-.navbar-custom .navbar-nav > .active > a {
-  color: white;
-  background-color: #222222;
-}
-.navbar-custom .navbar-nav > .active > a:hover {
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
   color: white;
   background-color: #222222;
 }
@@ -119,7 +106,7 @@ h6 {
   .navbar-custom {
     border-color: transparent;
     background-color: transparent;
-    padding: 1.7em 0;
+    padding: 0.5em 0em;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -129,6 +116,12 @@ h6 {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+  }
+  .navbar-custom .nav li a:hover,
+  .navbar-custom .nav li a:focus {
+    background: #222222;
+    color: white;
+    border-radius: 10%;
   }
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 10%;
@@ -165,7 +158,7 @@ header {
       rgba(92, 38, 180, 0.50),
       rgba(92, 38, 180, 0.50)
     ),
-    url('../assets/office.jpeg');
+    url('../img/office.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -206,6 +199,12 @@ section {
 .section-heading {
   margin-top: 0em;
   margin-bottom: 1em;
+  line-height: 1.5em;
+}
+.section-subheading {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  line-height: 1.4em;
 }
 @media (min-width: 768px) {
   section {
@@ -214,9 +213,8 @@ section {
 }
 .service-heading {
   margin: 1em 0em;
-  text-transform: none;
 }
-section#about {
+#about {
   background-color: #5c26b4;
   color: white;
   padding: 4em 0;
@@ -271,7 +269,7 @@ section#about {
 
   padding-bottom: 3.0em;
 }
-section#team {
+#team {
   background-color: white;
   padding: 5em 0em 0em;;
   margin: 0em 0em;
@@ -298,11 +296,6 @@ section#team {
   border: solid white;
   border-radius: 50%;
 }
-.team-member h3 {
-  color: #5c26b4;
-  margin-top: 1.0em;
-  text-transform: none;
-}
 .team-member h6 {
   color: #7e187c;
   text-transform: uppercase;
@@ -315,6 +308,14 @@ section#team {
   width: 45%;
   margin: 0 auto 0.5em;
 }
+ul.social-buttons li a {
+  display: block;
+  background-color: #;
+  height: 1.3em;
+  width: 1.3em;
+  border-radius: 20%;
+  color: white;
+}
 @media (min-width: 768px){
   .team-member p {
     width: 60%;
@@ -324,68 +325,67 @@ section#team {
     width: 45%;
   }
 }
-section#clients {
+#clients {
   background-color: #5c26b4;
   padding: 1em 0em;
 }
-section#contact {
+#contact {
   padding-top: 5em;
   background-color: #222222;
 }
-section#contact .section-heading {
+#contact .section-heading {
   color: white;
   margin-bottom: 0em;
 }
-section#contact .section-subheading {
+#contact .section-subheading {
   color: #585858;
   width: 60%;
   margin: auto;
   padding-bottom: 3em;
 }
-section#contact .form-group {
+#contact .form-group {
   margin-bottom: 0.5em;
   color: white;
 }
-section#contact .form-group input,
-section#contact .form-group textarea {
+#contact .form-group input,
+#contact .form-group textarea {
   padding: 1em;
   border-color: #222222;
 }
-section#contact .form-group input.form-control {
+#contact .form-group input.form-control {
   background-color: #333333;
 }
-section#contact .form-group textarea.form-control {
+#contact .form-group textarea.form-control {
   height: 15em;
   background-color: #333333;
 }
-section#contact .form-control:focus {
+#contact .form-control:focus {
   border-color: #fed136;
-  box-shadow: none;
 }
-section#contact ::-webkit-input-placeholder {
+#contact ::-webkit-input-placeholder {
   font-family: Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   color: #7e7e7e;
 }
-section#contact :-moz-placeholder {
+#contact :-moz-placeholder {
   font-family: Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   color: #7e7e7e;
 }
-section#contact ::-moz-placeholder {
+#contact ::-moz-placeholder {
   font-family: Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   color: #7e7e7e;
 }
-section#contact :-ms-input-placeholder {
+#contact :-ms-input-placeholder {
   font-family: Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   color: #7e7e7e;
 }
-section#contact [id^="contact-"]:first-child h5 {
+#contact [id^="contact-"]:first-child h5 {
   padding-top: 1.0em;
 }
-section#contact [id^="contact-"] h5 {
+#contact [id^="contact-"] h5 {
   color: white;
   display: block;
   float: left;
@@ -440,6 +440,7 @@ footer ul.quicklinks li:last-child {
 footer a{
   color: #7a7a7a;
 }
+<<<<<<< HEAD
 ul.social-buttons li a {
   display: block;
   background-color: #5b25b1;
