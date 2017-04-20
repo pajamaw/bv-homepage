@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 .text-muted {
   color: white;
@@ -8,11 +8,14 @@ body {
 .text-primary {
   color: #fed136;
 }
-.white-border {
+.wb {
   border-color: white;
 }
+.purple {
+  color: #5c26b4;
+}
 p {
-  font-size: 14px;
+  font-size: 1em;
   line-height: 1.75;
 }
 h1,
@@ -21,9 +24,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
 }
 .img-centered {
   margin: 0 auto;
@@ -60,7 +62,7 @@ h6 {
 }
 .navbar-custom .navbar-brand {
   color: white;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-family: Arial, sans-serif;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -74,20 +76,17 @@ h6 {
 .navbar-custom .navbar-toggle {
   background-color: #5c26b4;
   border-color: #5c26b4;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  font-family: Arial, sans-serif;
   color: white;
-  font-size: 12px;
+  font-size: 1em;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
   background-color: #5c26b4;
 }
 .navbar-custom .nav li a {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  font-family: Arial, sans-serif;
   font-weight: 400;
-  letter-spacing: 1px;
   color: white;
 }
 .navbar-custom .nav li a:hover,
@@ -108,7 +107,7 @@ h6 {
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
-    padding: 25px 0;
+    padding: 1.7em 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -121,13 +120,13 @@ h6 {
     transition: all 0.3s;
   }
   .navbar-custom .navbar-nav > .active > a {
-    border-radius: 3px;
+    border-radius: 2%;
   }
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
     background-color: #222222;
-    padding: 10px 0;
+    padding: -0.7em 0;
   }
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
@@ -136,78 +135,68 @@ h6 {
 @media (max-width: 768px) {
   .navbar-custom.affix {
     background-color: #222222;
-    padding: 10px 0;
+    padding: 0.7em 0;
   }
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
 }
 header {
-  background-image: url('../assets/office-purple-filter.png');
+  background:
+    linear-gradient(
+      rgba(92, 38, 180, 0.50),
+      rgba(92, 38, 180, 0.50)
+    ),
+    url('../assets/office.jpeg');
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
   -o-background-size: cover;
   text-align: center;
   color: white;
+  padding-top: 8em;
+  padding-bottom: 16em;
 }
-header .intro-text {
-  padding-top: 100px;
-  padding-bottom: 50px;
+header .intro-lead-in {
+  font-weight: 400;
+  padding: 0em;
 }
-header .intro-text .intro-lead-in {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
-  font-size: 22px;
-  line-height: 22px;
-  margin-bottom: 25px;
-}
-header .intro-text .intro-heading {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 50px;
-  margin-bottom: 25px;
+header .intro-heading {
+  font-size: 5em;
+  padding-top: 0.7em;
+  padding-bottom: 0em;
 }
 @media (min-width: 768px) {
-  header .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
+  header .intro-lead-in {
+    margin: 2em auto;
+    text-align: center;
+    max-width: 100%;
+    width: 50%;
   }
-  header .intro-text .intro-lead-in {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 25px;
-  }
-  header .intro-text .intro-heading {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 75px;
-    line-height: 75px;
-    margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  header .intro-lead-in {
+    margin: 2em auto;
+    text-align: center;
+    max-width: 100%;
+    width: 60%;
   }
 }
 section {
-  padding: 8em 0em;
+  padding: 4em 0em;
 }
 section h2.section-heading {
-  font-size: 40px;
+  font-size: 3em;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 1em;
 }
 section h3.section-subheading {
-  font-size: 16px;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
   text-transform: none;
-  font-style: italic;
   font-weight: 400;
-  margin-bottom: 75px;
+  margin-bottom: 5em;
 }
 @media (min-width: 768px) {
   section {
@@ -221,6 +210,7 @@ section h3.section-subheading {
 section#about {
   background-color: #5c26b4;
   color: white;
+  padding: 4em 0;
 }
 @media (min-width: 768px) {
   #about h2#about-heading-text {
@@ -231,17 +221,30 @@ section#about {
   }
 }
 @media (max-width: 767px) {
+  #about {
+    width: 100%
+  }
   #about h2#about-heading-text {
     display: block;
   }
   #about h2#about-heading-img {
     display: none;
   }
+  #about img {
+    width: 50%;
+    height:auto;
+  }
+  #about p {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+  }
 }
 section#services {
   background-color: #222222;
   color: white;
   text-align: center;
+  padding: 3em;
 }
 
 section#services h3.section-subheading {
@@ -249,7 +252,7 @@ section#services h3.section-subheading {
 }
 .service-description {
   color: #7b7b7b;
-  width: 45%;
+  width: 70%;
   margin: auto;
   padding-bottom: 3.0em;
 }
@@ -258,14 +261,14 @@ section#team {
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
-#team h3 {
+#team h3.section-heading,
+#team h3.section-subheading {
   width: 50%;
   margin: auto;
   color: black;
-  padding-bottom: 1em;
 }
 #team h3.section-subheading {
-  padding-bottom: 5em;
+  padding-bottom: 7.5em;
 }
 #team p {
   width: 50%;
@@ -285,14 +288,19 @@ section#team {
   border: solid white;
   border-radius: 50%;
 }
+.team-member h3 {
+  color: #5c26b4;
+  margin-top: 1.0em;
+  text-transform: none;
+}
 .team-member h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
+  color: #7e187c;
+  margin-bottom: 0.5em;
   text-transform: none;
 }
 .team-member p {
   margin-top: 0;
-  color: #7e187c;
+  color: black;
 }
 section#clients {
   background-color: #5c26b4;
@@ -325,7 +333,7 @@ section#contact .form-group input.form-control {
   background-color: #333333;
 }
 section#contact .form-group textarea.form-control {
-  height: 236px;
+  height: 15em;
   background-color: #333333;
 }
 section#contact .form-control:focus {
@@ -333,26 +341,22 @@ section#contact .form-control:focus {
   box-shadow: none;
 }
 section#contact ::-webkit-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  font-family: Arial, sans-serif;
   font-weight: 700;
   color: #7e7e7e;
 }
 section#contact :-moz-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  font-family: Arial, sans-serif;
   font-weight: 700;
   color: #7e7e7e;
 }
 section#contact ::-moz-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  font-family: Arial, sans-serif;
   font-weight: 700;
   color: #7e7e7e;
 }
 section#contact :-ms-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  font-family: Arial, sans-serif;
   font-weight: 700;
   color: #7e7e7e;
 }
@@ -382,7 +386,7 @@ footer span.copyright {
   width: 100%;
   padding-top: 1em;
   padding-bottom: 1em;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   text-align: left;
   float: left;
   color: #7a7a7a;
@@ -395,7 +399,7 @@ footer ul.quicklinks {
   margin-bottom: 0;
   text-align: left;
   color: #7a7a7a;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   list-style: none;
   float:left;
 }
