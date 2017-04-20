@@ -16,7 +16,7 @@ body {
 }
 p {
   font-size: 1em;
-  line-height: 1.75;
+  line-height: 1.75em;
 }
 h1,
 h2,
@@ -29,6 +29,9 @@ h6 {
 }
 .img-centered {
   margin: 0 auto;
+}
+.section-heading {
+  line-height: 1.5em;
 }
 .btn:focus,
 .btn:active,
@@ -187,8 +190,7 @@ section {
   padding: 4em 0em;
 }
 section h2.section-heading {
-  font-size: 3em;
-  margin-top: 0;
+  margin-top: 0em;
   margin-bottom: 1em;
 }
 section h3.section-subheading {
@@ -196,7 +198,6 @@ section h3.section-subheading {
   font-family: Arial, sans-serif;
   text-transform: none;
   font-weight: 400;
-  margin-bottom: 5em;
 }
 @media (min-width: 768px) {
   section {
@@ -246,14 +247,20 @@ section#services {
   text-align: center;
   padding: 3em;
 }
-
-section#services h3.section-subheading {
+section#services .section-heading{
+  margin-bottom: 0.2em;
+}
+section#services .section-subheading {
   color: #7b7b7b;
+  width: 45%;
+  margin: auto;
+  padding-bottom: 4em;
 }
 .service-description {
   color: #7b7b7b;
-  width: 70%;
+  width: 45%;
   margin: auto;
+
   padding-bottom: 3.0em;
 }
 section#team {
@@ -263,7 +270,7 @@ section#team {
 }
 #team h3.section-heading,
 #team h3.section-subheading {
-  width: 50%;
+  width: 45%;
   margin: auto;
   color: black;
 }
