@@ -1,9 +1,19 @@
 body {
   overflow-x: hidden;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.text-muted {
+  color: white;
+}
+.text-primary {
+  color: #fed136;
+}
+.white-border {
+  border-color: white;
 }
 p {
-  font-size: 1em;
-  line-height: 1.75em;
+  font-size: 14px;
+  line-height: 1.75;
 }
 h1,
 h2,
@@ -11,8 +21,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Arial, sans-serif;
-  font-weight: 500;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .img-centered {
   margin: 0 auto;
@@ -34,62 +45,74 @@ h6 {
 .open .dropdown-toggle.btn-xl {
   color: white;
   background-color: #5c26b4;
+  border-color: #5c26b4;
 }
-.wb {
-  border-color: white;
+.btn-form {
+  color: #7b7b7b;
+  background-color: #222222;
+  border-color: #7b7b7b;
+  margin: 0 auto;
+  padding: 0.5em 1.5em;
 }
-.wb.btn-xl:hover,
-.wb.btn-xl:active {
-  color: #5c26b4;
-  background-color: white;
+.navbar-custom {
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-custom .navbar-brand {
+  color: white;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
-.navbar-custom .navbar-brand.active,
-.navbar-custom .navbar-brand {
-  color: white;
-  font-family: Arial, sans-serif;
-}
-.navbar-custom .navbar-collapse {
-  border-color: #5c26b4;
-}
-.navbar-custom .navbar-toggle,
-.navbar-custom .navbar-toggle:focus {
-  background-color: #5c26b4;
-  border-color: #5c26b4;
-  font-family: Arial, sans-serif;
-  color: white;
-  font-size: 1em;
-}
-.navbar-custom .navbar-toggle:hover {
-  background-color: white;
+.navbar-custom .navbar-brand.active {
   color: #5c26b4;
 }
+.navbar-custom .navbar-collapse {
+  border-color: rgba(255, 255, 255, 0.02);
+}
+.navbar-custom .navbar-toggle {
+  background-color: #5c26b4;
+  border-color: #5c26b4;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #5c26b4;
+}
 .navbar-custom .nav li a {
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
   font-weight: 400;
+  letter-spacing: 1px;
   color: white;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  background: #222222;
-  color: white;
+  color: #5c26b4;
+  outline: none;
 }
-.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a {
+  border-radius: 0;
+  color: white;
+  background-color: #5c26b4;
+}
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #222222;
+  background-color: #5c26b4;
 }
 @media (min-width: 768px) {
   .navbar-custom {
-    border-color: transparent;
     background-color: transparent;
-    padding: 0.5em 0em;
+    padding: 25px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
+    border: none;
   }
   .navbar-custom .navbar-brand {
     font-size: 2em;
@@ -97,109 +120,107 @@ h6 {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
-  .navbar-custom .nav li a:hover,
-  .navbar-custom .nav li a:focus {
-    background: #222222;
-    color: white;
-    border-radius: 10%;
-  }
   .navbar-custom .navbar-nav > .active > a {
-    border-radius: 10%;
+    border-radius: 3px;
   }
+}
+@media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #5c26b4;
-    border-color: #4e2099;
-    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#7438d5), to(#5c26b4));
-    background-image: -webkit-linear-gradient(top, #7438d5, 0%, #5c26b4, 100%);
-    background-image: -moz-linear-gradient(top, #7438d5 0%, #5c26b4 100%);
-    background-image: linear-gradient(to bottom, #7438d5 0%, #5c26b4 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7438d5', endColorstr='#ff5c26b4', GradientType=0);
+    background-color: #222222;
+    padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
 }
 @media (max-width: 768px) {
-  .navbar-custom {
-    background-color: #5c26b4;
-    border-color: #4e2099;
-    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#7438d5), to(#5c26b4));
-    background-image: -webkit-linear-gradient(top, #7438d5, 0%, #5c26b4, 100%);
-    background-image: -moz-linear-gradient(top, #7438d5 0%, #5c26b4 100%);
-    background-image: linear-gradient(to bottom, #7438d5 0%, #5c26b4 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7438d5', endColorstr='#ff5c26b4', GradientType=0);
+  .navbar-custom.affix {
+    background-color: #222222;
+    padding: 10px 0;
+  }
+  .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em;
   }
 }
 header {
-  background:
-    linear-gradient(
-      rgba(92, 38, 180, 0.50),
-      rgba(92, 38, 180, 0.50)
-    ),
-    url('../img/office.jpeg');
-  background-size: cover;
+  background-image: url('../assets/office-purple-filter.png');
   background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
+  background-size: cover;
   -o-background-size: cover;
   text-align: center;
   color: white;
-  padding-top: 8em;
-  padding-bottom: 16em;
 }
-header .section-subheading {
-  padding: 0em;
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
-header .intro-heading {
-  font-size: 5em;
-  padding-top: 0.7em;
-  padding-bottom: 0em;
+header .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+header .intro-text .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
 }
 @media (min-width: 768px) {
-  header .section-subheading {
-    margin: 2em auto;
-    text-align: center;
-    max-width: 100%;
-    width: 50%;
+  header .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
   }
-}
-@media (max-width: 767px) {
-  header .section-subheading {
-    margin: 2em auto;
-    text-align: center;
-    max-width: 100%;
-    width: 60%;
+  header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  header .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;
   }
 }
 section {
-  padding: 4em 0em;
+  padding: 8em 0em;
 }
-.section-heading {
-  margin-top: 0em;
-  margin-bottom: 1em;
-  line-height: 1.5em;
+section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
-.section-subheading {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 300;
-  line-height: 1.4em;
+section h3.section-subheading {
+  font-size: 16px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 75px;
 }
 @media (min-width: 768px) {
   section {
     padding: 10em 0em;
   }
 }
-#about {
-  background-color: #5c26b4;
-  color: white;
-  padding: 4em 0;
+.service-heading {
+  margin: 1em 0em;
+  text-transform: none;
 }
-#about {
+section#about {
   background-color: #5c26b4;
   color: white;
-  padding: 4em 0;
 }
 @media (min-width: 768px) {
   #about h2#about-heading-text {
@@ -210,60 +231,46 @@ section {
   }
 }
 @media (max-width: 767px) {
-  #about {
-    width: 100%
-  }
   #about h2#about-heading-text {
     display: block;
   }
   #about h2#about-heading-img {
     display: none;
   }
-  #about img {
-    width: 50%;
-    height:auto;
-  }
-  #about h4 {
-    text-align: center;
-    margin: auto;
-    width: 90%;
-  }
 }
-#services {
+section#services {
   background-color: #222222;
   color: white;
   text-align: center;
-  padding: 3em;
 }
-#services .section-heading{
-  margin-bottom: 0.2em;
-}
-#services .section-subheading {
+
+section#services h3.section-subheading {
   color: #7b7b7b;
-  width: 45%;
-  margin: auto;
-  padding-bottom: 4em;
 }
 .service-description {
   color: #7b7b7b;
   width: 45%;
   margin: auto;
-
   padding-bottom: 3.0em;
 }
-#team {
+section#team {
   background-color: white;
-  padding: 5em 0em 0em;;
-  margin: 0em 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
 }
-#team .section-heading,
-#team .section-subheading {
-  width: 60%;
-  margin: 0em auto;
+#team h3 {
+  width: 50%;
+  margin: auto;
   color: black;
+  padding-bottom: 1em;
 }
-#team .section-subheading {
-  padding-bottom: 7.5em;
+#team h3.section-subheading {
+  padding-bottom: 5em;
+}
+#team p {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 1em;
 }
 .team-member {
   color: #5c2eb1;
@@ -278,96 +285,81 @@ section {
   border: solid white;
   border-radius: 50%;
 }
-.team-member h6 {
-  color: #7e187c;
-  text-transform: uppercase;
-  margin: 0 auto 0.5em;
-  width: 65%;
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
 }
 .team-member p {
   margin-top: 0;
-  color: black;
-  width: 45%;
-  margin: 0 auto 0.5em;
+  color: #7e187c;
 }
-ul.social-buttons li a {
-  display: block;
-  background-color: #;
-  height: 1.3em;
-  width: 1.3em;
-  border-radius: 20%;
-  color: white;
-}
-@media (min-width: 768px){
-  .team-member p {
-    width: 60%;
-  }
-  #team .section-heading,
-  #team .section-subheading {
-    width: 45%;
-  }
-}
-#clients {
+section#clients {
   background-color: #5c26b4;
-  padding: 1em 0em;
+  padding-top: 1.0em;
+  padding-bottom: 1.5em;
 }
-#contact {
+section#contact {
   padding-top: 5em;
   background-color: #222222;
 }
-#contact .section-heading {
+section#contact .section-heading {
   color: white;
-  margin-bottom: 0em;
 }
-#contact .section-subheading {
+section#contact .section-subheading {
   color: #585858;
-  width: 60%;
+  width: 50%;
   margin: auto;
   padding-bottom: 3em;
 }
-#contact .form-group {
+section#contact .form-group {
   margin-bottom: 0.5em;
   color: white;
 }
-#contact .form-group input,
-#contact .form-group textarea {
+section#contact .form-group input,
+section#contact .form-group textarea {
   padding: 1em;
   border-color: #222222;
 }
-#contact .form-group input.form-control {
+section#contact .form-group input.form-control {
   background-color: #333333;
 }
-#contact .form-group textarea.form-control {
-  height: 15em;
+section#contact .form-group textarea.form-control {
+  height: 236px;
   background-color: #333333;
 }
-#contact .form-control:focus {
+section#contact .form-control:focus {
   border-color: #fed136;
+  box-shadow: none;
 }
-#contact ::-webkit-input-placeholder {
-  font-family: Arial, sans-serif;
-  font-weight: 600;
+section#contact ::-webkit-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #7e7e7e;
 }
-#contact :-moz-placeholder {
-  font-family: Arial, sans-serif;
-  font-weight: 600;
+section#contact :-moz-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #7e7e7e;
 }
-#contact ::-moz-placeholder {
-  font-family: Arial, sans-serif;
-  font-weight: 600;
+section#contact ::-moz-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #7e7e7e;
 }
-#contact :-ms-input-placeholder {
-  font-family: Arial, sans-serif;
-  font-weight: 600;
+section#contact :-ms-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #7e7e7e;
 }
-#contact [id^="contact-"]:first-child h5 {
+section#contact [id^="contact-"]:first-child h3 {
   padding-top: 1.0em;
 }
-#contact [id^="contact-"] h5 {
+section#contact [id^="contact-"] h3 {
   color: white;
   display: block;
   float: left;
@@ -379,5 +371,98 @@ ul.social-buttons li a {
 .section-description {
   display: block;
   clear: left;
+  color: #7a7a7a;
+}
+footer {
+  text-align: center;
+  background-color: #1f1f1f;
+}
+footer span.copyright {
+  border-top: 0.1em solid #7a7a7a;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: left;
+  float: left;
+  color: #7a7a7a;
+}
+footer .section-subheading {
+  text-align: left;
+  color: white;
+}
+footer ul.quicklinks {
+  margin-bottom: 0;
+  text-align: left;
+  color: #7a7a7a;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  list-style: none;
+  float:left;
+}
+@media (max-width: 767px) {
+  footer div.row:first-child div:last-child {
+    margin-top: -10em;
+  }
+}
+footer ul.quicklinks li {
+  text-align: left;
+  margin-left: -2.5em;
+}
+footer ul.quicklinks li:last-child {
+  padding-bottom: 2em;
+}
+footer a{
+  color: #7a7a7a;
+}
+ul.social-buttons {
+  margin-bottom: 0;
+}
+ul.social-buttons li a {
+  display: block;
+  background-color: #5b25b1;
+  height: 1.3em;
+  width: 1.3em;
+  border-radius: 20%;
+  color: white;
+}
+footer {
+  text-align: center;
+  background-color: #1f1f1f;
+}
+footer span.copyright {
+  border-top: 0.1em solid #7a7a7a;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  float: left;
+  color: #7a7a7a;
+}
+footer .section-subheading {
+  text-align: left;
+  color: white;
+}
+footer ul.quicklinks {
+  margin-bottom: 0;
+  text-align: left;
+  color: #7a7a7a;
+  font-family: Arial, sans-serif;
+  list-style: none;
+  float:left;
+}
+@media (max-width: 767px) {
+  footer div.row:first-child div:last-child {
+    margin-top: -10em;
+  }
+}
+footer ul.quicklinks li {
+  text-align: left;
+  margin-left: -2.5em;
+}
+footer ul.quicklinks li:last-child {
+  padding-bottom: 2em;
+}
+footer a{
   color: #7a7a7a;
 }
