@@ -11,6 +11,9 @@
     target: '.navbar-fixed-top',
     offset: 51
   });
+  $('#dropdown-items').on('mouseleave', function(){
+    $('.navbar-toggle:visible').click();
+  });
   $('.navbar-collapse ul li a').click(function(){
     $('.navbar-toggle:visible').click();
   });

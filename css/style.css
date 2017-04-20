@@ -62,13 +62,18 @@ h6 {
   color: #5c26b4;
   background-color: white;
 }
-
 .btn-form {
   color: #7b7b7b;
   background-color: #222222;
   border-color: #7b7b7b;
   margin: 0 auto;
   padding: 0.5em 1.5em;
+}
+.btn-form:hover,
+.btn-form:focus,
+.btn-form:active {
+  color: white;
+  background-color: #7b7b7b;
 }
 .navbar-custom {
   background-color: transparent;
@@ -82,10 +87,10 @@ h6 {
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: #5c26b4;
+  color: white;
 }
 .navbar-custom .navbar-collapse {
-  border-color: rgba(255, 255, 255, 0.02);
+  border-color: #5c26b4;
 }
 .navbar-custom .navbar-toggle {
   background-color: #5c26b4;
@@ -96,7 +101,8 @@ h6 {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #5c26b4;
+  background-color: white;
+  color: #5c26b4;
 }
 .navbar-custom .nav li a {
   font-family: Arial, sans-serif;
@@ -105,18 +111,19 @@ h6 {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #5c26b4;
-  outline: none;
+  background: #222222;
+  color: white;
+  outline: white;
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: #5c26b4;
+  background-color: #222222;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #5c26b4;
+  background-color: #222222;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -125,7 +132,6 @@ h6 {
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
-    border: none;
   }
   .navbar-custom .navbar-brand {
     font-size: 2em;
@@ -136,8 +142,6 @@ h6 {
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 2%;
   }
-}
-@media (min-width: 768px) {
   .navbar-custom.affix {
     background-color: #222222;
     padding: -0.7em 0;
@@ -147,12 +151,8 @@ h6 {
   }
 }
 @media (max-width: 768px) {
-  .navbar-custom.affix {
-    background-color: #222222;
-    padding: 0.7em 0;
-  }
-  .navbar-custom.affix .navbar-brand {
-    font-size: 1.5em;
+  .navbar-custom {
+    background-color: #5c26b4;
   }
 }
 header {
@@ -334,7 +334,7 @@ section#contact .section-heading {
 }
 section#contact .section-subheading {
   color: #585858;
-  width: 50%;
+  width: 60%;
   margin: auto;
   padding-bottom: 3em;
 }
@@ -378,10 +378,10 @@ section#contact :-ms-input-placeholder {
   font-weight: 700;
   color: #7e7e7e;
 }
-section#contact [id^="contact-"]:first-child h3 {
+section#contact [id^="contact-"]:first-child h5 {
   padding-top: 1.0em;
 }
-section#contact [id^="contact-"] h3 {
+section#contact [id^="contact-"] h5 {
   color: white;
   display: block;
   float: left;
