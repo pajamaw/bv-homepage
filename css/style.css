@@ -1,15 +1,12 @@
 body {
   overflow-x: hidden;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 .text-muted {
   color: white;
 }
 .text-primary {
   color: #fed136;
-}
-.wb {
-  border-color: white;
 }
 .purple {
   color: #5c26b4;
@@ -33,6 +30,11 @@ h6 {
 .section-heading {
   line-height: 1.5em;
 }
+.section-subheading {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  line-height: 1.4em;
+}
 .btn:focus,
 .btn:active,
 .btn.active,
@@ -50,8 +52,17 @@ h6 {
 .open .dropdown-toggle.btn-xl {
   color: white;
   background-color: #5c26b4;
-  border-color: #5c26b4;
 }
+.wb {
+  border-color: white;
+}
+.wb.btn-xl:hover,
+.wb.btn-xl:focus,
+.wb.btn-xl:active {
+  color: #5c26b4;
+  background-color: white;
+}
+
 .btn-form {
   color: #7b7b7b;
   background-color: #222222;
@@ -161,8 +172,7 @@ header {
   padding-top: 8em;
   padding-bottom: 16em;
 }
-header .intro-lead-in {
-  font-weight: 400;
+header .section-subheading {
   padding: 0em;
 }
 header .intro-heading {
@@ -171,7 +181,7 @@ header .intro-heading {
   padding-bottom: 0em;
 }
 @media (min-width: 768px) {
-  header .intro-lead-in {
+  header .section-subheading {
     margin: 2em auto;
     text-align: center;
     max-width: 100%;
@@ -179,7 +189,7 @@ header .intro-heading {
   }
 }
 @media (max-width: 767px) {
-  header .intro-lead-in {
+  header .section-subheading {
     margin: 2em auto;
     text-align: center;
     max-width: 100%;
@@ -189,15 +199,9 @@ header .intro-heading {
 section {
   padding: 4em 0em;
 }
-section h2.section-heading {
+.section-heading {
   margin-top: 0em;
   margin-bottom: 1em;
-}
-section h3.section-subheading {
-  font-size: 1em;
-  font-family: Arial, sans-serif;
-  text-transform: none;
-  font-weight: 400;
 }
 @media (min-width: 768px) {
   section {
@@ -235,22 +239,22 @@ section#about {
     width: 50%;
     height:auto;
   }
-  #about p {
+  #about h4 {
     text-align: center;
     margin: auto;
     width: 90%;
   }
 }
-section#services {
+#services {
   background-color: #222222;
   color: white;
   text-align: center;
   padding: 3em;
 }
-section#services .section-heading{
+#services .section-heading{
   margin-bottom: 0.2em;
 }
-section#services .section-subheading {
+#services .section-subheading {
   color: #7b7b7b;
   width: 45%;
   margin: auto;
@@ -265,22 +269,17 @@ section#services .section-subheading {
 }
 section#team {
   background-color: white;
-  padding-bottom: 0em;
-  margin-bottom: 0em;
+  padding: 5em 0em 0em;;
+  margin: 0em 0em;
 }
-#team h3.section-heading,
-#team h3.section-subheading {
-  width: 45%;
-  margin: auto;
+#team .section-heading,
+#team .section-subheading {
+  width: 60%;
+  margin: 0em auto;
   color: black;
 }
-#team h3.section-subheading {
+#team .section-subheading {
   padding-bottom: 7.5em;
-}
-#team p {
-  width: 50%;
-  margin: auto;
-  padding-bottom: 1em;
 }
 .team-member {
   color: #5c2eb1;
@@ -300,19 +299,30 @@ section#team {
   margin-top: 1.0em;
   text-transform: none;
 }
-.team-member h4 {
+.team-member h6 {
   color: #7e187c;
-  margin-bottom: 0.5em;
-  text-transform: none;
+  text-transform: uppercase;
+  margin: 0 auto 0.5em;
+  width: 65%;
 }
 .team-member p {
   margin-top: 0;
   color: black;
+  width: 45%;
+  margin: 0 auto 0.5em;
+}
+@media (min-width: 768px){
+  .team-member p {
+    width: 60%;
+  }
+  #team .section-heading,
+  #team .section-subheading {
+    width: 45%;
+  }
 }
 section#clients {
   background-color: #5c26b4;
-  padding-top: 1.0em;
-  padding-bottom: 1.5em;
+  padding: 1em 0em;
 }
 section#contact {
   padding-top: 5em;
@@ -320,6 +330,7 @@ section#contact {
 }
 section#contact .section-heading {
   color: white;
+  margin-bottom: 0em;
 }
 section#contact .section-subheading {
   color: #585858;
