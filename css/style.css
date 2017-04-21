@@ -172,7 +172,9 @@ header {
 }
 header .intro-heading {
   padding-top: 0.5em;
+  padding-bottom: 1em;
   font-size: 4em;
+  margin-bottom: -1em;
 }
 header .section-subheading {
   padding: 0em;
@@ -182,18 +184,21 @@ header .section-subheading {
 }
 @media (min-width: 768px) {
   header {
-    padding-bottom: 16em;
+    padding: 5em 0em;
+    margin-bottom: -10em;
   }
   header .intro-heading {
-    font-size: 5em;
-    padding-top: 0.7em;
-    padding-bottom: 0em;
+    font-size: 4em;
+    padding-bottom: 1.0em;
   }
   header .section-subheading {
     margin: 2em auto;
     text-align: center;
     max-width: 100%;
     width: 50%;
+  }
+  header .intro-text {
+    padding-bottom: 25em;
   }
 }
 section {
@@ -218,13 +223,17 @@ section {
   margin: 1em 0em;
 }
 #about {
+  padding: 4em;
   background-color: #5c26b4;
   color: white;
-  padding: 4em 0;
   width: 100%
+}
+#about .section-heading {
+  font-size: 4em;
 }
 #about h2#about-heading-text {
   display: block;
+  font-size: 3.0em
 }
 #about h2#about-heading-img {
   display: none;
@@ -247,13 +256,24 @@ section {
   }
   #about h2#about-heading-img {
     display: block;
-    margin-left: 1em;
+    font-size: 2.5em;
+    text-align: left;
+    width: 100%;
+    margin-left: 0.5em;
   }
   #about h4 {
     text-align: left;
     margin: auto;
     width: 90%;
     padding-bottom: 1em;
+  }
+  #about h4:first-of-type {
+    margin-top: -2em;
+  }
+}
+@media (min-width: 993px) {
+  #about h2#about-heading-img {
+    font-size: 3.0em;
   }
 }
 #services {
