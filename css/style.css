@@ -8,6 +8,9 @@ body {
 .purple {
   color: #5c26b4;
 }
+.wb {
+  border-color: white;
+}
 p {
   font-size: 1em;
   line-height: 1.75em;
@@ -42,11 +45,13 @@ h6 {
   color: white;
   background-color: #5c26b4;
 }
-.wb {
-  border-color: white;
+.purple-reflect.btn-xl:hover,
+.purple-reflect.btn-xl:active {
+  color: #5c26b4;
+  background-color: white;
 }
-.wb.btn-xl:hover,
-.wb.btn-xl:active {
+#about.btn-xl:hover,
+#about.btn-xl:active {
   color: #5c26b4;
   background-color: white;
 }
