@@ -160,6 +160,8 @@ header {
     ),
     url('../img/office.jpeg');
   background-size: cover;
+  background-position: 0;
+  background-origin: 0;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
